@@ -20,8 +20,8 @@ router.get("/guardar", async (req, res) => {
 
 router.get("/", async (req, res) => {
   const genres = await Genre.findAll();
-  console.log(genres);
-  res.json(genres)
+  //console.log(genres);
+  res.json(genres);
 });
 
 module.exports = router;
